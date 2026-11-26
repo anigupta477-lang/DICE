@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "DICE",
+  "version": "0.1.0",
+  "description": "Your intelligent research companion",
+  "permissions": [
+    "sidePanel",
+    "tabs",
+    "tabGroups",
+    "storage",
+    "contextMenus",
+    "scripting",
+    "activeTab"
+  ],
+  "optional_host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8000/*"
+  ],
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Open DICE"
+  }
+}

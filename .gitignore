@@ -1,0 +1,17 @@
+# Node
+extension/node_modules/
+extension/dist/
+
+# Python
+**/__pycache__/
+**/.pytest_cache/
+**/*.pyc
+**/*.pyo
+
+# Env secrets
+backend/.env
+extension/.env
+
+# OS
+.DS_Store
+Thumbs.db
